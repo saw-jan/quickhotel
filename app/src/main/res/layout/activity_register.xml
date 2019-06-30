@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Register"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="47dp"
+        android:layout_marginTop="102dp"
+        android:background="@drawable/qh"
+        app:layout_constraintBottom_toTopOf="@+id/fullName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:background="@drawable/textbox_border"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_user"
+        android:hint="@string/full_name"
+        android:padding="10dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/mobileNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/mobileNum"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:background="@drawable/textbox_border"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_contact"
+        android:hint="@string/contact"
+        android:padding="10dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/newpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullName" />
+
+    <EditText
+        android:id="@+id/newpassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:background="@drawable/textbox_border"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_password"
+        android:hint="@string/password"
+        android:padding="10dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileNum" />
+
+    <EditText
+        android:id="@+id/confirm"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:background="@drawable/textbox_border"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_confirm"
+        android:hint="@string/confirm_password"
+        android:padding="10dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newpassword" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="130dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:onClick="register"
+        android:focusable="true"
+        android:text="@string/sign_up"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm" />
+
+</android.support.constraint.ConstraintLayout>
